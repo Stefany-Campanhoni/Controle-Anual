@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div {
+    margin-top: 5px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+}
+.div > input {
+    width: 70%;
+}
+
+.monthsContainer {
+    width: 270px;
+}
+.months {
+    width: 261px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.amountField::-webkit-outer-spin-button,
+.amountField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.amountField[type=number] {
+  -moz-appearance: textfield;
+}
+
+.months, .amountField {
+    border: 3px solid rgb(166, 166, 166);
+    padding: 5px;
+}
+    .months:focus, .amountField:focus {
+        outline: none;
+        border-color: rgb(114, 114, 114);
+    }
+
+button {
+    background-color: rgb(79, 129, 189);
+    border: 3px solid rgb(56, 93, 138);
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+
+.table {
+    margin-top: 17px;
+}
+table {
+    width: 262px;
+    translate: -5px 0;
+}
+.left {
+    text-align: left;
+    width: 180px;
+}
+.right {
+    text-align: right;
+    width: 110px;
+}
+tfoot td {
+    background-color: rgb(31, 73, 125);
+    color: white;
+}
+th {
+    background-color: rgb(79, 129, 189);
+    color: white;
+}
+th, td {
+    padding: 2px;
+}
+
+.one, .two {
+    background-color: #D0D8E8;
+}
+.three, .four {
+    background-color: #E9EDF4;
+}

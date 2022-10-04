@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluxo de Caixa</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="content">
+    <section class="header">
+      <section class="monthsContainer">
+        <select name="months" id="months" class="months">
+          <option value="Janeiro">Janeiro</option>
+          <option value="Fevereiro">Fevereiro</option>
+          <option value="Março">Março</option>
+          <option value="Abril">Abril</option>
+          <option value="Maio">Maio</option>
+          <option value="Junho">Junho</option>
+          <option value="Julho">Julho</option>
+          <option value="Agosto">Agosto</option>
+          <option value="Setembro">Setembro</option>
+          <option value="Outubro">Outubro</option>
+          <option value="Novembro">Novembro</option>
+          <option value="Dezembro">Dezembro</option>
+        </select>
+      </section>
+      <section class="div div-flex">
+        <input type="number" name="amount" id="amount" class="amountField" placeholder="Valor" />
+        <button onclick="add()" class="addButton" id="addButton">
+          Adicionar
+        </button>
+      </section>
+    </section>
+    <section class="table">
+      <table>
+        <thead>
+          <tr>
+            <th class="left">Mês</th>
+            <th class="right">Valor</th>
+          </tr>
+        </thead>
+        <tbody id="datas">
+            <!-- inputs will be here -->
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="left">Total</td>
+            <td id="total" class="right">0.00</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button id="restartButton" hidden>Restart</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
